@@ -92,8 +92,16 @@ int main() {
     cout << "----------Destruct----------" << endl;
     ((Canine*)canine)->~Canine();
     ((Bird*)bird)->~Bird();
-    
+
     animal->~Animal();
+
+    //In case..
+
+    cout<<"Just in case.............."<<endl;
+    delete canine;
+    delete bird;
+    delete animal;
+
 
 
 
