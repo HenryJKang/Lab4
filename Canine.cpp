@@ -42,24 +42,29 @@ void Canine::hunt(Animal *animal) {
         if (abs(animal->getY() - get<1>(xyzcoordinate) <= 1)) {
             if (abs(animal->getZ() - get<2>(xyzcoordinate) <= 1)) {
                 animal->setAlive(false);
-                cout << "Canine successfully haunted" << endl;
+                cout << "Canine successfully hunted" << endl;
             } else {
-                cout << "Haunt failed";
+                cout << "Hunt failed";
             }
         } else {
-            cout << "Haunt failed";
+            cout << "Hunt failed";
         }
     } else {
-        cout << "Haunt failed";
+        cout << "Hunt failed";
     }
     //animal->setAlive(false);
+}
+void Canine::location() {
+    cout << "Locations X: " << get<0>(xyzcoordinate) << " Y:" << get<1>(xyzcoordinate) << " Z:"
+         << get<2>(xyzcoordinate);
+
 }
 
 ostream &operator<<(ostream &out, const Canine &a) {
     out << "Animal Type: Canine" ;
     out << "\nAge:" << a.age;
     out << "\nID: " << a.ID;
-    out << "\nalive: " << (a.life ? "yes" : "no");
+    out << "\nAlive: " << (a.life ? "yes" : "no");
     out << "\nThe coordinate x: " << std::get<0>(a.xyzcoordinate);
     out << "\nThe coordinate y: " << std::get<1>(a.xyzcoordinate);
     out << "\nThe coordinate z: " << std::get<2>(a.xyzcoordinate);

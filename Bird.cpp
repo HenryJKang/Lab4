@@ -8,7 +8,7 @@
 
 using namespace std;
 
-Bird::Bird(int age, int x, int y, int z) {
+Bird::Bird(int age, double x, double y, double z) {
     this->age = age;
     xyzcoordinate = make_tuple(x, y, z);
 }
@@ -24,8 +24,7 @@ Bird::Bird() {
 
 // Move method for Bird class.
 void Bird::move(double x, double y, double z) {
-    std::get<0>(xyzcoordinate) = x;
-    std::get<1>(xyzcoordinate) = y;
+    Animal::move(x,y);
     std::get<2>(xyzcoordinate) = z;
 }
 
@@ -54,7 +53,7 @@ ostream &operator<<(ostream &out, const Bird &a) {
     out << "Animal Type: Bird";
     out << "\nAge:" << a.age;
     out << "\nID: " << a.ID;
-    out << "\nlife: " << a.life;
+    out << "\nAlive: " << (a.life ? "yes" : "no");
     out << "\nThe coordinate x: " << std::get<0>(a.xyzcoordinate);
     out << "\nThe coordinate y: " << std::get<1>(a.xyzcoordinate);
     out << "\nThe coordinate z: " << std::get<2>(a.xyzcoordinate);

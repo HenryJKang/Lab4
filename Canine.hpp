@@ -29,7 +29,7 @@ public:
     void eat() override;
 
     void hunt(Animal *animal);
-
+    void location();
     friend ostream &operator<<(ostream &out, const Canine &a);
 };
 

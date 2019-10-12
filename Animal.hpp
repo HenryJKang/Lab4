@@ -26,6 +26,7 @@ public:
     Animal(int age, double x, double y);
 
     virtual void move(double x, double y);
+    virtual void move(double x, double y, double z);
 
     void setAlive(bool yn);
 
@@ -53,6 +54,7 @@ public:
     int getAge();
 
     int getLive();
+
 
     void setAge(int x);
 };

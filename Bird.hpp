@@ -19,13 +19,13 @@ public:
     //friend istream & operator >>(istream& in, Bird& a);
     Bird(Bird &p2);
 
-    Bird(int age, int x, int y, int z);
+    Bird(int age, double x, double y, double z);
 
     Bird();
 
     void location();
 
-    void move(double x, double y, double z);
+    void move(double x, double y, double z)override;
 
     virtual ~Bird();
 

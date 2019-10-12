@@ -30,6 +30,11 @@ void Animal::move(double x, double y) {
     get<1>(xyzcoordinate) = y;
     get<2>(xyzcoordinate) = 0;
 }
+void Animal::move(double x, double y, double z){
+    get<0>(xyzcoordinate) = x;
+    get<1>(xyzcoordinate) = y;
+    get<2>(xyzcoordinate) = z;
+}
 
 void Animal::location() {
     cout << "Locations X: " << get<0>(xyzcoordinate) << " Y:" << get<1>(xyzcoordinate) << " Z:"
@@ -78,13 +83,15 @@ int Animal::getAge() {
     return age;
 }
 
+
 ostream &operator<<(ostream &out, const Animal &a) {
-    out << "Age:" << a.age;
-    out << "ID: " << a.ID;
-    out << "life: " << a.life;
-    out << "The coordinate x: " << std::get<0>(a.xyzcoordinate);
-    out << "The coordinate y: " << std::get<1>(a.xyzcoordinate);
-    out << "The coordinate z: " << std::get<2>(a.xyzcoordinate);
+    out << "Animal type: Animal";
+    out << "\nAge:" << a.age;
+    out << "\nID: " << a.ID;
+    out << "\nAlive: " << (a.life ? "yes" : "no");
+    out << "\nThe coordinate x: " << std::get<0>(a.xyzcoordinate);
+    out << "\nThe coordinate y: " << std::get<1>(a.xyzcoordinate);
+    out << "\nThe coordinate z: " << std::get<2>(a.xyzcoordinate);
 
     return out;
 }
