@@ -47,10 +47,10 @@ RM = "C:\Program Files\JetBrains\CLion 2019.2.1\bin\cmake\win\bin\cmake.exe" -E 
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\danie\CLionProjects\Lab4
+CMAKE_SOURCE_DIR = C:\Users\danie\CLionProjects\Lab4V1
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\danie\CLionProjects\Lab4\cmake-build-debug
+CMAKE_BINARY_DIR = C:\Users\danie\CLionProjects\Lab4V1\cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -79,9 +79,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\danie\CLionProjects\Lab4\cmake-build-debug\CMakeFiles C:\Users\danie\CLionProjects\Lab4\cmake-build-debug\CMakeFiles\progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\danie\CLionProjects\Lab4V1\cmake-build-debug\CMakeFiles C:\Users\danie\CLionProjects\Lab4V1\cmake-build-debug\CMakeFiles\progress.marks
 	$(MAKE) -f CMakeFiles\Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\danie\CLionProjects\Lab4\cmake-build-debug\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\danie\CLionProjects\Lab4V1\cmake-build-debug\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -122,6 +122,114 @@ Lab4/fast:
 	$(MAKE) -f CMakeFiles\Lab4.dir\build.make CMakeFiles/Lab4.dir/build
 .PHONY : Lab4/fast
 
+Animal.obj: Animal.cpp.obj
+
+.PHONY : Animal.obj
+
+# target to build an object file
+Animal.cpp.obj:
+	$(MAKE) -f CMakeFiles\Lab4.dir\build.make CMakeFiles/Lab4.dir/Animal.cpp.obj
+.PHONY : Animal.cpp.obj
+
+Animal.i: Animal.cpp.i
+
+.PHONY : Animal.i
+
+# target to preprocess a source file
+Animal.cpp.i:
+	$(MAKE) -f CMakeFiles\Lab4.dir\build.make CMakeFiles/Lab4.dir/Animal.cpp.i
+.PHONY : Animal.cpp.i
+
+Animal.s: Animal.cpp.s
+
+.PHONY : Animal.s
+
+# target to generate assembly for a file
+Animal.cpp.s:
+	$(MAKE) -f CMakeFiles\Lab4.dir\build.make CMakeFiles/Lab4.dir/Animal.cpp.s
+.PHONY : Animal.cpp.s
+
+Bird.obj: Bird.cpp.obj
+
+.PHONY : Bird.obj
+
+# target to build an object file
+Bird.cpp.obj:
+	$(MAKE) -f CMakeFiles\Lab4.dir\build.make CMakeFiles/Lab4.dir/Bird.cpp.obj
+.PHONY : Bird.cpp.obj
+
+Bird.i: Bird.cpp.i
+
+.PHONY : Bird.i
+
+# target to preprocess a source file
+Bird.cpp.i:
+	$(MAKE) -f CMakeFiles\Lab4.dir\build.make CMakeFiles/Lab4.dir/Bird.cpp.i
+.PHONY : Bird.cpp.i
+
+Bird.s: Bird.cpp.s
+
+.PHONY : Bird.s
+
+# target to generate assembly for a file
+Bird.cpp.s:
+	$(MAKE) -f CMakeFiles\Lab4.dir\build.make CMakeFiles/Lab4.dir/Bird.cpp.s
+.PHONY : Bird.cpp.s
+
+Canine.obj: Canine.cpp.obj
+
+.PHONY : Canine.obj
+
+# target to build an object file
+Canine.cpp.obj:
+	$(MAKE) -f CMakeFiles\Lab4.dir\build.make CMakeFiles/Lab4.dir/Canine.cpp.obj
+.PHONY : Canine.cpp.obj
+
+Canine.i: Canine.cpp.i
+
+.PHONY : Canine.i
+
+# target to preprocess a source file
+Canine.cpp.i:
+	$(MAKE) -f CMakeFiles\Lab4.dir\build.make CMakeFiles/Lab4.dir/Canine.cpp.i
+.PHONY : Canine.cpp.i
+
+Canine.s: Canine.cpp.s
+
+.PHONY : Canine.s
+
+# target to generate assembly for a file
+Canine.cpp.s:
+	$(MAKE) -f CMakeFiles\Lab4.dir\build.make CMakeFiles/Lab4.dir/Canine.cpp.s
+.PHONY : Canine.cpp.s
+
+inheritance.obj: inheritance.cpp.obj
+
+.PHONY : inheritance.obj
+
+# target to build an object file
+inheritance.cpp.obj:
+	$(MAKE) -f CMakeFiles\Lab4.dir\build.make CMakeFiles/Lab4.dir/inheritance.cpp.obj
+.PHONY : inheritance.cpp.obj
+
+inheritance.i: inheritance.cpp.i
+
+.PHONY : inheritance.i
+
+# target to preprocess a source file
+inheritance.cpp.i:
+	$(MAKE) -f CMakeFiles\Lab4.dir\build.make CMakeFiles/Lab4.dir/inheritance.cpp.i
+.PHONY : inheritance.cpp.i
+
+inheritance.s: inheritance.cpp.s
+
+.PHONY : inheritance.s
+
+# target to generate assembly for a file
+inheritance.cpp.s:
+	$(MAKE) -f CMakeFiles\Lab4.dir\build.make CMakeFiles/Lab4.dir/inheritance.cpp.s
+.PHONY : inheritance.cpp.s
+
 main.obj: main.cpp.obj
 
 .PHONY : main.obj
@@ -158,6 +266,18 @@ help:
 	@echo ... edit_cache
 	@echo ... Lab4
 	@echo ... rebuild_cache
+	@echo ... Animal.obj
+	@echo ... Animal.i
+	@echo ... Animal.s
+	@echo ... Bird.obj
+	@echo ... Bird.i
+	@echo ... Bird.s
+	@echo ... Canine.obj
+	@echo ... Canine.i
+	@echo ... Canine.s
+	@echo ... inheritance.obj
+	@echo ... inheritance.i
+	@echo ... inheritance.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
