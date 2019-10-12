@@ -16,7 +16,6 @@ class Bird : public Animal {
 public:
     friend ostream &operator<<(ostream &out, const Bird &a);
 
-    //friend istream & operator >>(istream& in, Bird& a);
     Bird(Bird &p2);
 
     Bird(int age, double x, double y, double z);
@@ -27,12 +26,11 @@ public:
 
     void move(double x, double y, double z)override;
 
-    virtual ~Bird();
+    ~Bird()override;
 
     void eat() override;
 
     void sleep() override;
-    //ostream& operator << (ostream& out, const Bird& a);
 
 };
 

@@ -26,7 +26,7 @@ Canine::Canine(Canine &p2) {
 }
 
 Canine::~Canine() {
-    cout << "Canine" << ID << " Destructor" << endl;
+    cout << "Canine Destructor" << endl;
 }
 
 void Canine::sleep() {

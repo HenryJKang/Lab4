@@ -20,7 +20,7 @@ int main() {
 //    canine->move(0, 0);
 
 //----
-    Animal *animal = new Animal(30,40,50);
+    Animal *animal = new Animal(30, 40, 50);
     Animal *bird = new Bird(67, 1.5, 8.9, 12);
     Animal *canine = new Canine(23, 15.2, 4.3);
     cout << "\n-----------The animals info section (Before move)" << endl;
@@ -37,10 +37,22 @@ int main() {
     canine->move(58, 12);
 
 
-
     cout << "\n" << *(animal) << endl;
     cout << "\n" << *((Bird *) bird) << endl;
     cout << "\n" << *((Canine *) canine) << endl;
+
+    //----------Eat / Sleep test ----------//
+    animal->sleep();
+
+    bird->sleep();
+
+    canine->sleep();
+
+    animal->eat();
+
+    bird->eat();
+
+    canine->eat();
 
 
     //--------Hunting Test ----------//
@@ -75,9 +87,14 @@ int main() {
     cout << "\n" << *((Bird *) bird) << endl;
     cout << "\n" << *((Canine *) canine) << endl;
 
-    //----------------------------
+    //-------------destruct------------
 
-    cout << "Using overloaded insertion operator" << endl;
+    cout << "----------Destruct----------" << endl;
+    ((Canine*)canine)->~Canine();
+    ((Bird*)bird)->~Bird();
+    
+    animal->~Animal();
+
 
 
     return 0;

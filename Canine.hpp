@@ -22,7 +22,7 @@ public:
 
     Canine(Canine &p2);
 
-    virtual ~Canine();
+    ~Canine()override ;
 
     void sleep() override;
 

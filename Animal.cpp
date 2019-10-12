@@ -43,7 +43,7 @@ void Animal::location() {
 
 //Destructor
 Animal::~Animal() {
-    cout << "\nAnimal " << ID << " Destructor";
+    cout << "Animal Destructor\n";
 }
 
 void Animal::sleep() { cout << "Animal Sleeping..." << endl; }

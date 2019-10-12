@@ -36,7 +36,9 @@ Bird::Bird(Bird &p2) {
 }
 
 //Destructor
-Bird::~Bird() {}
+Bird::~Bird() {
+    cout<<"\nBird Destructor"<<endl;
+}
 
 void Bird::eat() { cout << "Bird(s) is(are) eating..." << endl; }
 
